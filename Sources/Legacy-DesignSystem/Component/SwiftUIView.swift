@@ -13,7 +13,8 @@ struct SwiftUIView: View {
         Pretendard.register()
     }
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("시험공부해야하는데;;")
+            .foreground(LegacyColor.Red.normal)
             .font(.title2(.bold))
     }
 }
