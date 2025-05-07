@@ -7,6 +7,7 @@ public struct Pretendard {
         case regular = "Pretendard-Regular"
         case medium = "Pretendard-Medium"
         case extraBold = "Pretendard-ExtraBold"
+        case bitbit = "DNFBitBitOTF"
     }
     
     public static func register() {
