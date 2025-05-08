@@ -8,6 +8,11 @@ public struct LegacyColor {
         self.rawValue = rawValue
     }
     
+    public enum Common {
+        case white
+        case black
+    }
+    
     //MARK: Color
     public enum Primary {
         case normal
@@ -76,6 +81,16 @@ public struct LegacyColor {
         case normal
         case alternative
         case netural
+    }
+}
+
+@available(macOS 12, iOS 15, *)
+extension LegacyColor.Common : LegacyColorable, CaseIterable {
+    public var color : LegacyColor {
+        switch self {
+        case .white: .init(P.common100)
+        case .black: .init(P.common0)
+        }
     }
 }
 

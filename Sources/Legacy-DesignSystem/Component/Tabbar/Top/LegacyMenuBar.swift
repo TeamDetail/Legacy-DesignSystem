@@ -19,7 +19,7 @@ public struct LegacyMenuBar: View {
                     }
                 } label: {
                     item.icon
-                        .foregroundStyle(.white)
+                        .foreground(LegacyColor.Common.white)
                 }
                 .opacity(showAnimation ? 1 : 0)
                 .offset(y: showAnimation ? 0 : 20)
@@ -55,7 +55,7 @@ public struct TestView2: View {
                     }
                 } label: {
                     Image(icon: .menu)
-                        .foregroundStyle(.white)
+                        .foreground(LegacyColor.Common.white)
                         .frame(width: 56, height: 56)
                         .background(LegacyColor.Fill.normal)
                         .clipShape(size: 12)

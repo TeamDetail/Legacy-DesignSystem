@@ -28,10 +28,10 @@ public struct LegacyScrollView<Content: View>: View {
                 Image(icon: icon)
                     .resizable()
                     .frame(width: 36, height: 36)
-                    .foregroundStyle(.white)
+                    .foreground(LegacyColor.Common.white)
                 Text(title)
                     .font(.bitFont(size: 28))
-                    .foregroundStyle(.white)
+                    .foreground(LegacyColor.Common.white)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
             .padding(12)

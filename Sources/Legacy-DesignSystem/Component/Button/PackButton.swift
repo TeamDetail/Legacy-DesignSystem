@@ -31,7 +31,7 @@ public struct SwiftUIView: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text(title)
                     .font(.bitFont(size: 20))
-                    .foregroundStyle(.white)
+                    .foreground(LegacyColor.Common.white)
                 
                 Text(description)
                     .font(.caption1(.extraBold))
@@ -43,7 +43,7 @@ public struct SwiftUIView: View {
                     Text(credit)
                         .foreground(LegacyColor.Yellow.netural)
                     Text("크레딧")
-                        .foregroundStyle(.white)
+                        .foreground(LegacyColor.Common.white)
                 }
                 .font(.bitFont(size: 16))
             }
