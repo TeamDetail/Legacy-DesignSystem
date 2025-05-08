@@ -2,7 +2,7 @@ import Foundation
 
 @available(macOS 12, iOS 15, *)
 public enum LegacyIconography: String, Hashable {
-    case facebook = "Facebook"
+    case kakao = "Kakao"
     case background = "Background"
     case logo = "Logo"
     //MARK: Tab

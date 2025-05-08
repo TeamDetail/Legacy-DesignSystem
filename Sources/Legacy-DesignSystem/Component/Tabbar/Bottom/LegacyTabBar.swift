@@ -51,7 +51,7 @@ public struct TestView : View {
         LegacyTabBar(selection: $hello) {
             switch hello {
             case .flag:
-                SwiftUIView()
+                TestView()
             case .battle:
                 ScrollView {
                     ForEach(1...100, id: \.self) { hello in

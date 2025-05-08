@@ -19,7 +19,6 @@ public struct LegacyNavigationCell: View {
                     .font(.caption2(.medium))
             }
             .foreground(isSelected ? LegacyColor.Primary.normal : LegacyColor.Label.assistive)
-            
         }
         .disabled(isSelected)
     }
