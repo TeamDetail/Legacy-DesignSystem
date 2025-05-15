@@ -8,7 +8,7 @@ public struct LegacyNavigationCell: View {
     
     public var body: some View {
         Button {
-            withAnimation {
+            withAnimation(.spring(duration: 0.2)) {
                 HapticManager.instance.impact(style: .soft)
                 action()
             }
