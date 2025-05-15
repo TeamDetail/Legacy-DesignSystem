@@ -11,6 +11,7 @@ public struct LegacyColor {
     public enum Common {
         case white
         case black
+        case gray
     }
     
     //MARK: Color
@@ -90,6 +91,7 @@ extension LegacyColor.Common : LegacyColorable, CaseIterable {
         switch self {
         case .white: .init(P.common100)
         case .black: .init(P.common0)
+        case .gray: .init(P.neutral80)
         }
     }
 }
